@@ -1,0 +1,22 @@
+{
+    "name": "CBHeadingImage",
+    "lowCaseName": "cbheadingimage",
+    "description": "A customized ContentBlocks field for adding a heading which also contains an image (an SVG icon, for example).",
+    "author": "Hugo Peek",
+    "version": "0.1.0",
+
+    "package": {
+        "elements": {
+            "plugins": [
+                {
+                    "name": "cbHeadingImageInput",
+                    "events": ["ContentBlocks_RegisterInputs"]
+                }
+            ],
+
+            "categories": []
+        },
+
+        "systemSettings": []
+    }
+}
