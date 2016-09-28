@@ -13,7 +13,7 @@ class HeadingImageInput extends cbBaseInput {
      * @return array
      */
     public function getJavaScripts() {
-        $assetsUrl = $this->modx->getOption('patternlab.assets_url', null, MODX_ASSETS_URL . 'components/patternlab/');
+        $assetsUrl = $this->modx->getOption('cbheadingimage.assets_url', null, MODX_ASSETS_URL . 'components/cbheadingimage/');
         return array(
             $assetsUrl . 'js/inputs/cbheadingimage.input.js',
         );
@@ -90,7 +90,7 @@ class HeadingImageInput extends cbBaseInput {
         $tpls = array();
 
         // Grab the template from a .tpl file
-        $corePath = $this->modx->getOption('patternlab.core_path', null, MODX_CORE_PATH . 'components/patternlab/');
+        $corePath = $this->modx->getOption('cbheadingimage.core_path', null, MODX_CORE_PATH . 'components/cbheadingimage/');
 
         $template = file_get_contents($corePath . 'elements/inputs/cbheadingimageinput.template.tpl');
 

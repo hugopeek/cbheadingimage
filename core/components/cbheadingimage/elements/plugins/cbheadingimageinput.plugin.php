@@ -6,7 +6,7 @@
  */
 if ($modx->event->name == 'ContentBlocks_RegisterInputs') {
     // Load your own class. No need to require cbBaseInput, that's already loaded.
-    $path = $modx->getOption('patternlab.core_path', null, MODX_CORE_PATH . 'components/patternlab/');
+    $path = $modx->getOption('cbheadingimage.core_path', null, MODX_CORE_PATH . 'components/cbheadingimage/');
     require_once($path . 'elements/inputs/cbheadingimageinput.class.php');
 
     // Create an instance of your input type, passing the $contentBlocks var
